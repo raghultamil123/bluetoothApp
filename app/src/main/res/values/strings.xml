@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BluetoothApp</string>
+    <string name="connected_device">connected device</string>
+    <string name="available_device">Available device</string>
+    <string name="device_connected">connected</string>
+    <string name="device_connecting">connecting</string>
+    <string name="device_not_connected">not connected</string>
+</resources>

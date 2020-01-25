@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="receive_msg">#FFFFFF</color>
+    <color name="send_msg">#FFFFFF</color>
+    <color name="send_msg_body">#3363ff</color>
+    <color name="receive_msg_body">#3363ff</color>
+</resources>

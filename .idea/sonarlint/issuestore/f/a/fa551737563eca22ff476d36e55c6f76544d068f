@@ -1,0 +1,55 @@
+
+Esquid:S1172(".Remove this unused method parameter "context".(¸ÜÂ
+esquid:UselessImportCheck"5Remove this unused import 'java.lang.reflect.Method'.(Í“¯äüÿÿÿÿ8ÔÆ×¤û-
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ø¶ïø
+P
+squid:S106Ş"9Replace this use of System.out or System.err by a logger.(Ãîé·
+?squid:S1148g"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+O
+squid:S106U"9Replace this use of System.out or System.err by a logger.(«ˆÁÍ
+O
+squid:S106Q"9Replace this use of System.out or System.err by a logger.(…Îáı
+P
+squid:S106î"9Replace this use of System.out or System.err by a logger.(§¨Üé
+Lsquid:S1066÷"/Merge this if statement with the enclosing one.(İç°óüÿÿÿÿ
+Esquid:S10689".Remove this unused "socketType" private field.(øÕíÆ
+U
+squid:S106×"9Replace this use of System.out or System.err by a logger.(ç½ú˜øÿÿÿÿ
+P
+squid:S106›"9Replace this use of System.out or System.err by a logger.(‹ˆË
+@squid:S1148Æ"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+@squid:S1148“"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+csquid:CommentedOutCodeLineœ"<This block of commented-out lines of code should be removed.(š¼ğä
+T
+squid:S106z"9Replace this use of System.out or System.err by a logger.(ùæ‰úùÿÿÿÿ
+U
+squid:S106¶"9Replace this use of System.out or System.err by a logger.(Ñ×°°üÿÿÿÿ
+P
+squid:S106ç"9Replace this use of System.out or System.err by a logger.(Âçùı
+Asquid:S00108s")Either remove or fill this block of code.(×¬œÓ
+Qsquid:S1161F":Add the "@Override" annotation above this method signature(“–ış
+Rsquid:S1161¼":Add the "@Override" annotation above this method signature(“–ış
+Qsquid:S2209."5Change this instance-reference to a static reference.(Ã„¾ªşÿÿÿÿ
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ò®Œ¹ûÿÿÿÿ
+:squid:S1148A"#Use a logger to log this exception.(òçøì
+Q"squid:SwitchLastCaseIsDefaultCheck‰""Add a default case to this switch.(ş™ÅŞ
+@squid:S1148¦"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+U
+squid:S106Ê"9Replace this use of System.out or System.err by a logger.(ÆÔÚúÿÿÿÿ
+csquid:S2259­"KA "NullPointerException" could be thrown; "connectThread" is nullable here.(¹¨¶
+Lsquid:S2209+"5Change this instance-reference to a static reference.(è–Ñõ
+O
+squid:S106?"9Replace this use of System.out or System.err by a logger.(Ş™èÄ
+Qsquid:S1161y":Add the "@Override" annotation above this method signature(“–ış
+:squid:S1148N"#Use a logger to log this exception.(òçøì
+U
+squid:S106Ä"9Replace this use of System.out or System.err by a logger.(»ô½‘ıÿÿÿÿ
+gsquid:CommentedOutCodeLineJ"<This block of commented-out lines of code should be removed.(ÒøÅüÿÿÿÿ
+9squid:S3010+""Remove this assignment of "state".(è–Ñõ
+csquid:S2259"KA "NullPointerException" could be thrown; "connectThread" is nullable here.(¹¨¶
+O
+squid:S106D"9Replace this use of System.out or System.err by a logger.(¦Ä÷×
+P
+squid:S106‚"9Replace this use of System.out or System.err by a logger.(üãÍ
+Zsquid:S28861"CSynchronize this method to match the synchronization on "setState".(Ğ±ø
