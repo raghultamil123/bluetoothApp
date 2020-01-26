@@ -5,4 +5,5 @@
     <string name="device_connected">connected</string>
     <string name="device_connecting">connecting</string>
     <string name="device_not_connected">not connected</string>
+    <string name="save_message">Do you want to save contact?</string>
 </resources>

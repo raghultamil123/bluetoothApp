@@ -60,12 +60,11 @@ import java.util.UUID;
             BluetoothSocket temp =null;
             try {
                 temp = device.createInsecureRfcommSocketToServiceRecord(MY_UUID_INSECURE);
-                System.out.println("mass "+device.createInsecureRfcommSocketToServiceRecord(MY_UUID_INSECURE));
+
             }catch (IOException exception){
                 exception.printStackTrace();
             }
             socket = temp;
-            System.out.println("raghul");
         }
         public void run(){
             try {
@@ -78,11 +77,11 @@ import java.util.UUID;
                 exception.printStackTrace();
                 try {
                     socket.close();
-                    System.out.println("inside the socket close");
+
 
                 }catch(IOException ex){
 
-                    System.out.println("inside the exception");
+
 
                 }
                 ChatService.this.start();
@@ -119,12 +118,11 @@ import java.util.UUID;
             serverSocket = temp;
         }
         public void run(){
-            System.out.println("ted");
+
             BluetoothSocket socket = null;
             while(state != STATE_CONNECTED){
                 try {
                     socket = serverSocket.accept();
-                    System.out.println("loop");
                 }catch (IOException e){
 
                     System.out.println("exception" +e);
@@ -228,14 +226,13 @@ import java.util.UUID;
             connectThread.close();
             connectThread = null;
         }
-         System.out.println("raghul start");
+
         if(connectedThread !=null){
             connectedThread.cancel();
             connectedThread = null;
         }
         setState(STATE_LISTEN);
         if(acceptThread==null) {
-            System.out.println("inside run of rafhul");
             acceptThread = new AcceptThread();
             acceptThread.start();
         }
