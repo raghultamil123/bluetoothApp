@@ -14,7 +14,7 @@ import android.provider.BaseColumns;
      public static final String CONTACT_PATH = "contacts";
      public static final String CONTENT_LIST_TYPE = ContentResolver.CURSOR_DIR_BASE_TYPE + "/" +
              CONTENT_AUTHORITY  +"/" +CONTACT_PATH;
-     public static final Uri CONTENT_URI = Uri.parse(BASE_CONTENT_URI+CONTACT_PATH);
+     public static final Uri CONTENT_URI = Uri.parse(BASE_CONTENT_URI+"/"+CONTACT_PATH);
      public static final class BluetoothDetailsEntry implements BaseColumns {
          public static final String TABLE_NAME = "bluetooth_details";
          public static final String ID = BaseColumns._ID;

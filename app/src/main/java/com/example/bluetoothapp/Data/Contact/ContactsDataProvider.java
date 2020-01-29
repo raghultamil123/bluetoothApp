@@ -52,25 +52,38 @@ matcher.addURI(ContactsContract.CONTENT_AUTHORITY,ContactsContract.CONTACT_PATH,
     @Override
     public Uri insert(@NonNull Uri uri, @Nullable ContentValues values) {
        int code = matcher.match(uri);
+        System.out.println("mass"+code);
        switch (code){
-           case CONTACT_CODE :
-               insertBluetoothDetails(uri,values);
 
-           default: throw new IllegalStateException("message is called from the data");
+           case CONTACT_CODE :
+             return  insertBluetoothDetails(uri,values);
+
+
+           default: System.out.println(code);
+               throw new IllegalStateException("message is called from the data");
        }
     }
 
     private Uri insertBluetoothDetails(Uri uri, ContentValues values) {
+         System.out.println("rsg");
          Long user_details_id = null ;
          values.put(BluetoothDetailsEntry.USER_ID,user_details_id);
+
         SQLiteDatabase sqLiteDatabase = contactsDataHelper.getWritableDatabase();
+        ContentValues bluetoothValues = new ContentValues();
+        ContentValues userDetailsValue = new ContentValues();
+        userDetailsValue.put(UserDetailsEntry.FIRST_NAME,values.getAsString(UserDetailsEntry.FIRST_NAME));
+        userDetailsValue.put(UserDetailsEntry.LAST_NAME,values.getAsString(UserDetailsEntry.LAST_NAME));
+        userDetailsValue.put(UserDetailsEntry.DATE_OF_BIRTH,values.getAsString(UserDetailsEntry.DATE_OF_BIRTH));
         if (values.getAsString(UserDetailsEntry.FIRST_NAME)!=null){
 
-          user_details_id=  insertUserDetails(uri,values);
-          values.put(BluetoothDetailsEntry.USER_ID,user_details_id);
+          user_details_id=  insertUserDetails(uri,userDetailsValue);
+          bluetoothValues.put(BluetoothDetailsEntry.USER_ID,user_details_id);
 
         }
-       long id =  sqLiteDatabase.insert(BluetoothDetailsEntry.TABLE_NAME,null,values);
+        bluetoothValues.put(BluetoothDetailsEntry.DEV_NAME,values.getAsString(BluetoothDetailsEntry.DEV_NAME));
+        bluetoothValues.put(BluetoothDetailsEntry.DEV_MAC_ADDR,values.getAsString(BluetoothDetailsEntry.DEV_MAC_ADDR));
+       long id =  sqLiteDatabase.insert(BluetoothDetailsEntry.TABLE_NAME,null,bluetoothValues);
         return ContentUris.withAppendedId(uri,id);
 
     }

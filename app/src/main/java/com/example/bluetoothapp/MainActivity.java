@@ -52,10 +52,6 @@ public class MainActivity extends AppCompatActivity {
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         getBlutoothConnection(manager);
         ChatActivity chatActivity = new ChatActivity();
-
-
-
-
     }
 
     @Override

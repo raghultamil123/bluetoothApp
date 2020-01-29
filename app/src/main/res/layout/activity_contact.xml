@@ -5,9 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Contact">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher_foreground"/>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
         android:orientation="horizontal"
         android:id="@+id/name"
         >
@@ -21,11 +28,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="First name"/>
+
             <EditText
+                android:id="@+id/first_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/first_name"
-                android:ems="10"/>
+                android:ems="10" />
 
         </LinearLayout>
         <LinearLayout
@@ -52,6 +60,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:id="@+id/dob"
+        android:layout_marginLeft="8dp"
         android:layout_below="@id/name">
         <TextView
             android:layout_width="wrap_content"
@@ -65,5 +75,20 @@
             android:ems="5"
             android:onClick="setDate"/>
     </LinearLayout>
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/dob"
+    android:layout_marginLeft="8dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/device_name"/>
+</LinearLayout>
 </RelativeLayout>

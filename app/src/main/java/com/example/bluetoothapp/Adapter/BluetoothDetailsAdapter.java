@@ -4,6 +4,7 @@ import android.bluetooth.BluetoothDevice;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,7 +65,9 @@ import java.util.List;
                         Context context = getContext();
                         Class targetClass = Contact.class;
                         Intent intent = new Intent(context,targetClass);
-                        intent.putExtra("device_name",currentDevice.getName());
+                        Bundle bundle = new Bundle();
+                        bundle.putParcelable("device",currentDevice);
+                        intent.putExtra("device_det",bundle);
                         Toast.makeText(getContext(),"ok is selected",Toast.LENGTH_LONG).show();
                         getContext().startActivity(intent);
                     }

@@ -15,3 +15,11 @@ u
 Eapp/src/main/java/com/example/bluetoothapp/DataModel/ChatMessage.java,b\f\bf1dc1cf7dabf4dea36aa7d522129ac8e595dccd
 s
 Capp/src/main/java/com/example/bluetoothapp/Adapter/ChatAdapter.java,8\1\81c97c5f594305de04704287e90c2ce2dd447c8a
+}
+Mapp/src/main/java/com/example/bluetoothapp/Data/Contact/ContactsContract.java,2\7\27611d64df30414e4074a2306b13590ba9f7494a
+
+Oapp/src/main/java/com/example/bluetoothapp/Data/Contact/ContactsDataHelper.java,b\7\b7f0ef1b8feb15e9617f806de9e87f9193921f97
+g
+7app/src/main/java/com/example/bluetoothapp/Contact.java,b\6\b6157b3fb355d0c2dde9089098bd068a4d367b03
+Å
+Qapp/src/main/java/com/example/bluetoothapp/Data/Contact/ContactsDataProvider.java,c\f\cf360c871b9f3bc230dc7bf5e53cb90db331ea16
