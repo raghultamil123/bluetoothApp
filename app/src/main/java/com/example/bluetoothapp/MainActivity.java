@@ -11,6 +11,9 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -18,6 +21,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.bluetoothapp.Adapter.BluetoothDetailsAdapter;
+import com.example.bluetoothapp.DataModel.ContactDetail;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -30,8 +34,6 @@ public class MainActivity extends AppCompatActivity {
     public static BluetoothAdapter bluetoothAdapter;
     Set<BluetoothDevice> bluetoothDevices;
     ListView listView;
-    ListView availableView;
-    ArrayAdapter<String> availAdapter;
     BluetoothManager manager;
     private static final int REQUEST_ENABLE_BT = 3;
     BluetoothDetailsAdapter adapter;
@@ -142,4 +144,23 @@ public void pairedDevicesGeneration(List<BluetoothDevice> paired){
     });
 }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int itemId = item.getItemId();
+        switch (itemId){
+            case R.id.contact_id:Intent intent = new Intent(this, ContactDetails.class);
+            startActivity(intent);
+            return true;
+            default:break;
+
+        }
+        return false;
+    }
 }
