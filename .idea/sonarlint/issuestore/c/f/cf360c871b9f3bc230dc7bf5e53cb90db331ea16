@@ -1,16 +1,16 @@
 
+Msquid:S1172Z"*Remove this unused method parameter "uri".(ÚŞÙÅúÿÿÿÿ8øµàëş-
 wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰Ï€´ıÿÿÿÿ
-g
-squid:S128:"LEnd this switch case with an unconditional break, return or throw statement.(Ì±ÄÈúÿÿÿÿ
-Msquid:S1172W"*Remove this unused method parameter "uri".(ÚŞÙÅúÿÿÿÿ8øµàëş-
-gsquid:S13018"KReplace this "switch" statement by "if" statements to increase readability.(«ü”ùÿÿÿÿ
+nsquid:S00117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èôåÜüÿÿÿÿ
 gsquid:S1301-"KReplace this "switch" statement by "if" statements to increase readability.(«ü”ùÿÿÿÿ
-}squid:UselessImportCheck"TRemove this unnecessary import: same package classes are always implicitly imported.(çü£ãıÿÿÿÿ
-nsquid:S00117C"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èôåÜüÿÿÿÿ
 asquid:UselessImportCheck"=Remove this unused import 'android.database.ContentObserver'.(şÚĞä
-V
-squid:S106="9Replace this use of System.out or System.err by a logger.(°ì¶”8¼©îëş-
+}squid:UselessImportCheck"TRemove this unnecessary import: same package classes are always implicitly imported.(çü£ãıÿÿÿÿ
 [
 squid:S1067"9Replace this use of System.out or System.err by a logger.(à‰ô”ùÿÿÿÿ8Ú‹õëş-
+V
+squid:S106>"9Replace this use of System.out or System.err by a logger.(°ì¶”8¼©îëş-
 Ssquid:UselessImportCheck"/Remove this unused import 'android.os.Handler'.(ûÛ’¡
-}squid:S1488Y"ZImmediately return this expression instead of assigning it to the temporary variable "id".(ù±§ûÿÿÿÿ8øµàëş-
+}squid:S1488\"ZImmediately return this expression instead of assigning it to the temporary variable "id".(ù±§ûÿÿÿÿ8øµàëş-
+gsquid:S13018"KReplace this "switch" statement by "if" statements to increase readability.(«ü”ùÿÿÿÿ
+V
+squid:S106D"9Replace this use of System.out or System.err by a logger.(äÅ›‹8Šø´¼ÿ-

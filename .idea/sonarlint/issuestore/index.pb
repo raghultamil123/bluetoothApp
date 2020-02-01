@@ -23,3 +23,11 @@ g
 7app/src/main/java/com/example/bluetoothapp/Contact.java,b\6\b6157b3fb355d0c2dde9089098bd068a4d367b03
 
 Qapp/src/main/java/com/example/bluetoothapp/Data/Contact/ContactsDataProvider.java,c\f\cf360c871b9f3bc230dc7bf5e53cb90db331ea16
+w
+Gapp/src/main/java/com/example/bluetoothapp/Adapter/ContactsAdapter.java,c\c\ccd9eb0ac42dce2b3a76122255bcc22e03b67b9f
+w
+Gapp/src/main/java/com/example/bluetoothapp/DataModel/ContactDetail.java,d\e\de8b6069a5fb822c716a4c8f14b499629b3a1f95
+k
+;app/src/main/java/com/example/bluetoothapp/ContactInfo.java,9\a\9ade077d412ea6f817a034a1912a430957c83932
+n
+>app/src/main/java/com/example/bluetoothapp/ContactDetails.java,c\8\c8788d1bdddfec791c628af9e82739320d1b6655

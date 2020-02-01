@@ -11,6 +11,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
+            android:textSize="@dimen/contact_content"
             android:layout_margin="8dp"
             android:id="@+id/contact_icon"
             android:textColor="@android:color/white"
@@ -21,10 +22,12 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:textSize="@dimen/contact_header"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:id="@+id/contact_name"/>
             <TextView
+                android:textSize="@dimen/contact_content"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/contact_device"/>

@@ -1,9 +1,11 @@
 package com.example.bluetoothapp.DataModel;
 
+import java.io.Serializable;
+
 /*
  *@author rag
  *@project BluetoothApp
- */public class ContactDetail {
+ */public class ContactDetail implements Serializable {
      String firstName;
      String lastName;
      String dateOfBirth;

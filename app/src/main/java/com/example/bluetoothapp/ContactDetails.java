@@ -2,10 +2,14 @@ package com.example.bluetoothapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.bluetoothapp.Adapter.ContactsAdapter;
 import com.example.bluetoothapp.Data.Contact.ContactsContract;
@@ -24,14 +28,26 @@ public class ContactDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_details);
 
-
+        setTitle("Contacts");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         contactsDataHelper = new ContactsDataHelper(this);
         details = new ArrayList<>();
         getDetails();
         adapter= new ContactsAdapter(this,details);
         ListView view = findViewById(R.id.device_list);
-
         view.setAdapter(adapter);
+        view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(ContactDetails.this,ContactInfo.class);
+                Bundle bundle = new Bundle();
+                ContactDetail detail = details.get(position);
+                bundle.putSerializable("contact_details",detail);
+                intent.putExtra("contact",bundle);
+                startActivity(intent);
+
+            }
+        });
 
     }
     public void getDetails(){
@@ -50,7 +66,6 @@ public class ContactDetails extends AppCompatActivity {
             detail.setLastName(cursor.getString(6));
             detail.setDateOfBirth(cursor.getString(8));
             details.add(detail);
-
         }
         System.out.println("testing the size od contact"+ details.get(0).getDeviceAddress());
     }

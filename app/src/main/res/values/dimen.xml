@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="contact_header">20dp</dimen>
+    <dimen name="contact_image">32dp</dimen>
+    <dimen name="contact_content">16dp</dimen>
+</resources>

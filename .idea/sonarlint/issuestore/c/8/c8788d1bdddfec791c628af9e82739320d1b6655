@@ -1,0 +1,11 @@
+
+V
+squid:S1065"9Replace this use of System.out or System.err by a logger.(™ªïÁ8îñ†æÿ-
+]squid:UselessImportCheck"3Remove this unused import 'android.content.Intent'.(³ğ‹G8©ñæÿ-
+[squid:S11971"8Move the array designator from the variable to the type.(·•ºúÿÿÿÿ8îñ†æÿ-
+nsquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(Ä¢ˆ¡şÿÿÿÿ8îñ†æÿ-
+U
+squid:S106?"9Replace this use of System.out or System.err by a logger.(ÔÈŒ8îñ†æÿ-
+Osquid:S14811",Remove this unused "columns" local variable.(·•ºúÿÿÿÿ8îñ†æÿ-
+jsquid:MaximumInheritanceDepth"<This class has 6 parents which is greater than 5 authorized.(‚ØçÖúÿÿÿÿ
+^squid:S18541";Remove this useless assignment to local variable "columns".(·•ºúÿÿÿÿ8îñ†æÿ-

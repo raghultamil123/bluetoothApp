@@ -1,5 +1,5 @@
 
-wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰Ï€´ýÿÿÿÿ
-Qsquid:S1118":Add a private constructor to hide the implicit public one.(œŠ¾ú
 Psquid:S1118":Add a private constructor to hide the implicit public one.(öÁ”<
 Vsquid:S1118":Add a private constructor to hide the implicit public one.(õ«¤”ÿÿÿÿÿ
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‰Ï€´ýÿÿÿÿ
+Qsquid:S1118":Add a private constructor to hide the implicit public one.(œŠ¾ú
